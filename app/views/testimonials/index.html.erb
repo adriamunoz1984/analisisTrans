@@ -1,0 +1,71 @@
+
+
+<header class="bird-box">
+    
+    <div class="back-bird"></div>
+    <div class="logo"></div>
+    <div class="fore-bird"></div>
+   
+</header>
+
+<section class="content">
+   <article>
+        <h1>Clothing Store</h1>
+       
+       <hr>
+       
+       <p>
+           Aliqua admodum se quem amet. Legam occaecat si cillum culpa. Ad do sempiternum. 
+           Culpa iudicem commodo. Quo dolore nisi culpa cernantur, ne proident id proident. 
+           Ad arbitror quo occaecat, mandaremus ab duis ea varias non probant te qui se 
+           concursionibus.
+       </p>
+    </article>
+    <div style="height: 100px;"></div>
+</section>
+
+<div class="container">
+<h1>Testimonials</h1>
+    
+<% @testimonials.each do |testimonial| %>
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  
+    
+    <tbody>
+      <tr>
+        <td><small><%= testimonial.date.strftime("%B %d, %Y") %></small></td>
+      </tr>
+      <tr>
+        <td colspan="6" class="post">" <%= testimonial.post%>"</td>
+      </tr>
+      <tr>
+        <td class="name"> - <%= testimonial.name%></td>
+      </tr>
+      
+      
+    </tbody>
+    
+    </table>
+       
+        <div class="links">
+            <%= link_to 'Show', testimonial %>
+            <%= link_to 'Edit', edit_testimonial_path(testimonial) %>
+            <%= link_to 'Destroy', testimonial, method: :delete, data: { confirm: 'Are you sure?' } %>
+         </div>
+        
+    <hr>
+     <% end %>
+
+<br>
+
+<%= link_to 'New Testimonial', new_testimonial_path %>
+</div>

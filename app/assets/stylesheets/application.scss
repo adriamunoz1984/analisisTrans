@@ -1,0 +1,140 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body
+{
+    font-family: "Open sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 100px;
+    
+}
+
+h1
+{
+    color: #ccc;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+figure
+{
+    margin: auto;
+}
+
+.content article
+{
+    padding: 100px 0;
+    max-width: 642px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+.bird-box
+{
+    position: relative;
+    height: 590px;
+background-image: url(treebg2.png);
+    background-size: auto 600px;
+    background-position: top center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 1; 
+}
+
+.logo
+{
+    height: 500px;
+    width: 100%;
+    background-image: url(Title.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 25%;
+    margin-top: -50px; 
+}
+
+.fore-bird
+{
+    width: 960px;
+    height: 733px;
+   
+  background-image: url(treeFore.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: absolute;
+    left: 65%;
+    margin-left: -80px;
+   
+   
+}
+
+.back-bird
+{
+    width: 800px;
+    height: 600px;
+    background-image: url(treeMid.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    left: 50%;
+    margin-left: -480px;
+    opacity: 0.3; 
+}
+small
+{
+    color: darkgray;
+}
+.post
+{
+    font-size: 20px;
+}
+
+.links
+{
+    margin-top: 30px;
+}
+.name
+{
+    font-style: italic;
+}
+.row3 td
+{
+   padding-top: 30px;
+    color: aqua;
+}
+.container h1
+{
+    text-align: center;
+}
+
+footer
+{
+   left:0px;
+   bottom:0px;
+   height:100px;
+   width:100%;
+   background:#999;
+}
