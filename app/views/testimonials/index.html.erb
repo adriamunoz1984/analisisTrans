@@ -1,5 +1,5 @@
 
-
+<!--***************************************Logo and Parallax Effect**********************-->
 <header class="bird-box">
     
     <div class="back-bird"></div>
@@ -23,49 +23,48 @@
     </article>
     <div style="height: 100px;"></div>
 </section>
-
-<div class="container">
-<h1>Testimonials</h1>
-    
-<% @testimonials.each do |testimonial| %>
-<table>
-  <thead>
-    <tr>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  
-    
-    <tbody>
-      <tr>
-        <td><small><%= testimonial.date.strftime("%B %d, %Y") %></small></td>
-      </tr>
-      <tr>
-        <td colspan="6" class="post">" <%= testimonial.post%>"</td>
-      </tr>
-      <tr>
-        <td class="name"> - <%= testimonial.name%></td>
-      </tr>
-      
-      
-    </tbody>
-    
-    </table>
+<!--********************************************Picture Boxes*********************-->
+<div class="pic-wrapper">
+    <div class="innerWrap">
+        <div></div>
+        <div></div>
+        <div></div>
        
-        <div class="links">
-            <%= link_to 'Show', testimonial %>
-            <%= link_to 'Edit', edit_testimonial_path(testimonial) %>
-            <%= link_to 'Destroy', testimonial, method: :delete, data: { confirm: 'Are you sure?' } %>
-         </div>
-        
-    <hr>
-     <% end %>
+    </div>
 
-<br>
+</div>
 
-<%= link_to 'New Testimonial', new_testimonial_path %>
+
+
+<!--********************************************Testimonials*************************-->
+<div class="Test-wrapper">
+        <h1>Testimonials</h1>
+
+        <% @testimonials.each do |testimonial| %>
+        <table>
+          <tr>
+            <td><small><%= testimonial.date.strftime("%B %d, %Y") %></small></td>
+          </tr>
+          <tr>
+            <td colspan="6" class="post">" <%= testimonial.post%>"</td>
+          </tr>
+          <tr>
+            <td class="name"> - <%= testimonial.name%></td>
+          </tr>
+
+
+        </table>
+
+            <div class="links">
+                <%= link_to 'Show', testimonial %>
+                <%= link_to 'Edit', edit_testimonial_path(testimonial) %>
+                <%= link_to 'Destroy', testimonial, method: :delete, data: { confirm: 'Are you sure?' } %>
+             </div>
+
+        <hr>
+         <% end %>
+
+    <br>
+
+    <%= link_to 'New Testimonial', new_testimonial_path %>
 </div>

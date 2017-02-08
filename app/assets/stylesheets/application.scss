@@ -120,15 +120,6 @@ small
 {
     font-style: italic;
 }
-.row3 td
-{
-   padding-top: 30px;
-    color: aqua;
-}
-.container h1
-{
-    text-align: center;
-}
 
 footer
 {
@@ -138,3 +129,109 @@ footer
    width:100%;
    background:#999;
 }
+//Testimonial Wrappers
+.Test-wrapper
+{
+    padding: 15px;
+    background-color: gray;
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+.Test-wrapper h1
+{
+    text-align: center;
+}
+
+.pic-wrapper
+{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.innerWrap
+{
+    text-align: center;
+    margin-bottom: 100px;
+   
+}
+.innerWrap div
+{
+     display: inline-block;
+}
+.pic-wrapper div div:nth-child(-n+3)
+{
+    width: 29%;
+    height:400px;
+    background-color: antiquewhite;
+   
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.innerWrap div:nth-child(n+4)
+{
+   
+    padding: 5px;
+    background-color: azure;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.innerWrap div:first-child
+{
+    background-image: url("Tatle.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.innerWrap div:nth-child(2)
+{
+    background-image: url("us.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.innerWrap div:last-child
+{
+    background-image: url("tree2.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
