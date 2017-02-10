@@ -26,15 +26,22 @@
 <!--********************************************Picture Boxes*********************-->
 <div class="pic-wrapper">
     <div class="innerWrap">
-        <div></div>
-        <div></div>
-        <div></div>
-       
+        <div class="row">
+            <div class="cell"><%= image_tag("us.jpg") %></div>
+            <div class="cell"></div>
+            <div class="cell"><%= image_tag("us.jpg") %></div>
+            <div class="cell"></div>
+            <div class="cell"><%= image_tag("us.jpg") %></div>
+        </div>
+        <div class="row">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
     </div>
-
 </div>
-
-
 
 <!--********************************************Testimonials*************************-->
 <div class="Test-wrapper">
@@ -54,17 +61,14 @@
 
 
         </table>
-
             <div class="links">
                 <%= link_to 'Show', testimonial %>
                 <%= link_to 'Edit', edit_testimonial_path(testimonial) %>
                 <%= link_to 'Destroy', testimonial, method: :delete, data: { confirm: 'Are you sure?' } %>
              </div>
-
         <hr>
          <% end %>
-
-    <br>
+        <br>
 
     <%= link_to 'New Testimonial', new_testimonial_path %>
 </div>

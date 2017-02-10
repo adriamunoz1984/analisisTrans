@@ -146,60 +146,81 @@ footer
 //Picture wrapper and containers
 .pic-wrapper
 {
-    width:75%;
     margin: 0 auto;
 }
 
 .innerWrap
 {
     text-align: center;
-    margin-bottom: 100px;
+    margin:0 auto;
+    display: table;
+    border-spacing: 10px;
+    width: 75%
    
 }
-.innerWrap div
+.innerWrap .row
 {
-     display: inline-block;
+    display: table-row;
 }
-.pic-wrapper div div:nth-child(-n+3) //all picture divs
+
+.innerWrap .row .cell
 {
-    width: 29%;
-    height:400px;
-    background-color: antiquewhite;
-   
-    margin: 10px;
+    display: table-cell;
+    width: 20%;
+    height: 200px;
+    border-radius: 15px;
+  
+}
+
+img
+{
     border-radius: 15px;
 }
-
-.innerWrap div:nth-child(n+4)
-{
-   
-    padding: 5px;
-    background-color: azure;
-    margin: 10px;
-    border-radius: 15px;
-}
-
-.innerWrap div:first-child
-{
-    background-image: url("Tatle.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.innerWrap div:nth-child(2)
-{
-    background-image: url("us.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-}
-
-.innerWrap div:last-child
-{
-    background-image: url("tree2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
+//
+//.innerWrap div
+//{
+//     display: inline-block;
+//}
+//.pic-wrapper div div:nth-child(-n+3) //all picture divs
+//{
+//    width: 29%;
+//    height:400px;
+//    background-color: antiquewhite;
+//   
+//    margin: 10px;
+//    border-radius: 15px;
+//}
+//
+//.innerWrap div:nth-child(n+4)
+//{
+//   
+//    padding: 5px;
+//    background-color: azure;
+//    margin: 10px;
+//    border-radius: 15px;
+//}
+//
+//.innerWrap div:first-child
+//{
+//    background-image: url("Tatle.jpg");
+//    background-repeat: no-repeat;
+//    background-size: cover;
+//}
+//
+//.innerWrap div:nth-child(2)
+//{
+//    background-image: url("us.jpg");
+//    background-repeat: no-repeat;
+//    background-size:cover;
+//}
+//
+//.innerWrap div:last-child
+//{
+//    background-image: url("tree2.jpg");
+//    background-repeat: no-repeat;
+//    background-size: cover;
+//}
+//
 
 
 
